@@ -45,7 +45,7 @@
 
         <div class="container">
             <!-- https://github.com/dwyl/html-form-send-email-via-google-script-without-server -->
-            <form action="https://script.google.com/macros/s/AKfycbxMfPbT4DYJtUZ56Fis11FDdHeaV8ivW14CgKgTVjUnSzNpi9hi/exec" class="row" method="post">
+            <form action="https://script.google.com/macros/s/AKfycbwXGlTYxz1N_DgOldnp2ZPtk4B3mM3JXSdRjciy8Csns0niPeI/exec" class="row" method="post">
                 <div class="col col-desktop-6 col-6">
 
                     <div class="input-control">
@@ -67,7 +67,7 @@
                     <label for="mensagem">Mensagem</label>
                     </div>
                 </div>
-                <input type="submit" value="Salvar" class="btn orange">
+                <input type="submit" value="Enviar" class="btn orange">
             </form>
         </div>
     </section>
@@ -104,5 +104,28 @@
 <div id="copyright">
     &copy; ChatSchool - 2017 - Todos os direitos reservados
 </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    $('form').submit(function (event) {
+        event.preventDefault();
+
+        $('form input[type="submit"]').val('Aguarde...')
+            .attr('disabled', true);
+
+        $.ajax({
+            type: $('form').attr('method'),
+            url: $('form').attr('action'),
+            data: $('form').serialize(),
+            success: function () {
+                alert("Formulário enviado com sucesso!");
+                $('form').trigger('reset');
+
+                $('form input[type="submit"]').val('Enviar')
+                    .attr('disabled', false);
+            }
+        });
+    });
+</script>
 </body>
 </html>
