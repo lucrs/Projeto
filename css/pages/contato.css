@@ -17,4 +17,5 @@ form{
     border-radius: 0;
     padding: 20px 60px;
     font-size: 18px;
+    border: 1px solid black;
 }
