@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <base href="">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Extreme Designer</title>
+    <title>chatschool</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,9 +20,9 @@
     <![endif]-->
 </head>
 <body>
-<div class="container-fluid">
-    <div class="row">
-        <section id="sidenav" class="col-md-2">
+<div class="container-fluid box-100-height">
+    <div class="row box-100-height">
+        <section id="sidenav" class="col-md-2 box-100-height">
             <div class="navbar navbar-inverse navbar-static-top">
                 <div class="container-fluid">
                     <div class="navbar-header">
@@ -36,14 +37,14 @@
             </div>
 
             <ul class="nav nav-pills nav-stacked">
-                <li>
-                    <a href="">Todos os tópicos</a>
+                <li class="no-status">
+                    <a href=""><span class="glyphicon glyphicon-comment"></span> Todos os tópicos</a>
                 </li>
             </ul>
 
             <ul class="nav nav-pills nav-stacked">
-                <li class="navbar-header">
-                    Favoritos
+                <li class="nav-header">
+                    <span class="glyphicon glyphicon-star"></span> Favoritos
                 </li>
                 <li class="online">
                     <a href="">Candido</a>
@@ -60,20 +61,21 @@
             </ul>
 
             <ul class="nav nav-pills nav-stacked">
-                <li class="navbar-header">
+                <li class="nav-header">
                     Canais(3)
                 </li>
-                <li class="active online">
-                    <a href="">Comunicação-interna</a>
+                <li class="online active">
+                    <a href=""><span class="glyphicon glyphicon-lock"></span> Comunicação-interna</a>
                     <a href="" class="action">x</a>
                 </li>
                 <li>
-                    <a href="">estratégia</a>
+                    <a href=""><span class="glyphicon glyphicon-lock"></span> estratégia</a>
+                    <a href="" class="action">x</a>
                 </li>
             </ul>
 
             <ul class="nav nav-pills nav-stacked">
-                <li class="navbar-header">
+                <li class="nav-header">
                     Mensagens diretas
                 </li>
                 <li>
@@ -93,7 +95,7 @@
                     <a href="" class="action">x</a>
                 </li>
                 <li>
-                    <a href="">nilton_moraes</a>
+                    <a href="">nilton_morais</a>
                     <a href="" class="action">x</a>
                 </li>
                 <li>
@@ -101,10 +103,290 @@
                     <a href="" class="action">x</a>
                 </li>
                 <li>
-                    <a href="">Wesley Willians</a>
+                    <a href="">wesley Willians</a>
                     <a href="" class="action">x</a>
                 </li>
             </ul>
+        </section>
+
+        <section id="content" class="col-md-10 box-100-height">
+            <div class="navbar navbar-default navbar-static-top">
+                <div class="container-fluid">
+                    <ul id="chat-title" class="nav navbar-nav">
+                        <li>
+              <span>
+                <a href="" class="title">@candido</a>
+                <a href="" class="favorite"><span class="glyphicon glyphicon-star"></span></a> |
+                <a href="" class="status">ativo</a>
+              </span>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href=""><span class="glyphicon glyphicon-earphone"></span></a></li>
+                        <li><a href=""><span class="glyphicon glyphicon-cog"></span></a></li>
+                        <li>
+                            <form action="" class="navbar-form navbar-left">
+                                <div class="input-group">
+                                    <span class="input-group-addon">*</span>
+                                    <input type="text" class="form-control" placeholder="Buscar...">
+                                </div>
+                            </form>
+                        </li>
+                        <li><a href="">@</a></li>
+                        <li><a href=""><span class="glyphicon glyphicon-star-empty"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 datetime-separator">
+                    <h5>20/03/2017</h5>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="img-box-round">
+                        <img src="../images/team/team1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-11">
+                    <div class="row">
+                        <h5>amathias <small>5:35 PM</small></h5>
+                    </div>
+                    <div class="row">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Duis sit amet diam lacus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="img-box-round">
+                        <img src="../images/team/team2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-11">
+                    <div class="row">
+                        <h5>candido <small>5:35 PM</small></h5>
+                    </div>
+                    <div class="row">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Duis sit amet diam lacus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 datetime-separator">
+                    <h5>Hoje</h5>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="img-box-round">
+                        <img src="../images/team/team1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-11">
+                    <div class="row">
+                        <h5>amathias <small>5:35 PM</small></h5>
+                    </div>
+                    <div class="row">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Duis sit amet diam lacus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="img-box-round">
+                        <img src="../images/team/team2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-11">
+                    <div class="row">
+                        <h5>candido <small>5:35 PM</small></h5>
+                    </div>
+                    <div class="row">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Duis sit amet diam lacus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="img-box-round">
+                        <img src="../images/team/team1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-11">
+                    <div class="row">
+                        <h5>amathias <small>5:35 PM</small></h5>
+                    </div>
+                    <div class="row">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Duis sit amet diam lacus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="img-box-round">
+                        <img src="../images/team/team2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-11">
+                    <div class="row">
+                        <h5>candido <small>5:35 PM</small></h5>
+                    </div>
+                    <div class="row">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Duis sit amet diam lacus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="img-box-round">
+                        <img src="../images/team/team1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-11">
+                    <div class="row">
+                        <h5>amathias <small>5:35 PM</small></h5>
+                    </div>
+                    <div class="row">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Duis sit amet diam lacus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="img-box-round">
+                        <img src="../images/team/team2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-11">
+                    <div class="row">
+                        <h5>candido <small>5:35 PM</small></h5>
+                    </div>
+                    <div class="row">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Duis sit amet diam lacus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="img-box-round">
+                        <img src="../images/team/team1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-11">
+                    <div class="row">
+                        <h5>amathias <small>5:35 PM</small></h5>
+                    </div>
+                    <div class="row">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Duis sit amet diam lacus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="img-box-round">
+                        <img src="../images/team/team2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-11">
+                    <div class="row">
+                        <h5>candido <small>5:35 PM</small></h5>
+                    </div>
+                    <div class="row">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Duis sit amet diam lacus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="img-box-round">
+                        <img src="../images/team/team1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-11">
+                    <div class="row">
+                        <h5>amathias <small>5:35 PM</small></h5>
+                    </div>
+                    <div class="row">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Duis sit amet diam lacus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="img-box-round">
+                        <img src="../images/team/team2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-11">
+                    <div class="row">
+                        <h5>candido <small>5:35 PM</small></h5>
+                    </div>
+                    <div class="row">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Duis sit amet diam lacus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="img-box-round">
+                        <img src="../images/team/team1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-11">
+                    <div class="row">
+                        <h5>amathias <small>5:35 PM</small></h5>
+                    </div>
+                    <div class="row">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Duis sit amet diam lacus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="img-box-round">
+                        <img src="../images/team/team2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-11">
+                    <div class="row">
+                        <h5>candido <small>5:35 PM</small></h5>
+                    </div>
+                    <div class="row">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Duis sit amet diam lacus.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 </div>
